@@ -3,10 +3,12 @@ import {NoPageComponent} from '@sharedmodule/components';
 import {CommonModule} from '@angular/common';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {RouterModule} from '@angular/router';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
-    NoPageComponent
+    NoPageComponent,
+    HeaderComponent
   ],
   imports: [
     CommonModule,
@@ -20,6 +22,7 @@ import {RouterModule} from '@angular/router';
     ReactiveFormsModule,
     RouterModule,
 
+    HeaderComponent,
     NoPageComponent
   ]
 })
