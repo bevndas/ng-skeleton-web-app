@@ -1,0 +1,11 @@
+input, select {
+  padding: 10px 5px;
+  border-radius: 5px;
+  border: 1px solid  lightgrey;
+  font-family: 'sans-serif ', 'sans-serif';
+  background: white;
+  &:focus {
+    outline: none;
+    border-color:  lightblue;
+  }
+}

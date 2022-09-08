@@ -1,0 +1,38 @@
+//MIXINS
+@mixin transition($range:all,$time:0.3s,$ease:ease-in-out,$delay:null) {
+  transition: $time $range $ease $delay;
+}
+@mixin transdelay($time:1s){
+  transition-delay: $time;
+}
+@mixin translator($x:0,$y:0) {
+  transform: translate($x,$y);
+}
+@mixin placeholder {
+  &::-moz-placeholder {
+    @content;
+  }
+  &::-webkit-input-placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
+}
+@mixin font($s:null,$st:null,$w:null) {
+  font-size: $s;
+  font-style: $st;
+  font-weight: $w;
+}
+@mixin text($t:null,$d:null,$a:null) {
+  text-transform: $t;
+  text-align: $a;
+  text-decoration: $d;
+}
+@mixin position($p:null,$t:null,$r:null,$b:null,$l:null) {
+  position: $p;
+  top: $t;
+  right: $r;
+  bottom: $b;
+  left: $l;
+}

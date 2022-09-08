@@ -1,2 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
-@import "theme/theme";
+@import "src/theme/theme";
+
+@import 'src/theme/common/base';
+@import 'src/theme/common/global';
+@import 'src/theme/common/reset';

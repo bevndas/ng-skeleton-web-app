@@ -1,14 +1,15 @@
 import {NgModule} from '@angular/core';
-import {NoPageComponent} from '@sharedmodule/components';
 import {CommonModule} from '@angular/common';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {RouterModule} from '@angular/router';
-import { HeaderComponent } from './components/header/header.component';
+
+import { HeaderComponent, SearchBarComponent, NoPageComponent } from './components';
 
 @NgModule({
   declarations: [
     NoPageComponent,
-    HeaderComponent
+    HeaderComponent,
+    SearchBarComponent
   ],
   imports: [
     CommonModule,
@@ -23,6 +24,7 @@ import { HeaderComponent } from './components/header/header.component';
     RouterModule,
 
     HeaderComponent,
+    SearchBarComponent,
     NoPageComponent
   ]
 })

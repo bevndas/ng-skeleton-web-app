@@ -1,1 +1,19 @@
-<p>header works!</p>
+<div class="app-header">
+  <div class="header-panel">
+    <div class="logo">
+      Pharma
+    </div>
+    <div class="search-bar">
+      <app-search-bar></app-search-bar>
+    </div>
+    <a class="cart">
+      Cart
+    </a>
+    <a class="login" [routerLink]="routePaths.auth.login">
+        Login
+    </a>
+    <a class="sign-up" [routerLink]="routePaths.auth.register">
+      Sign Up
+    </a>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+@import 'src/theme/theme';
+
+.app-header {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  background: lightblue;
+  .header-panel {
+    display: grid;
+    grid-template-columns: 200px 1fr 100px 50px 100px;
+    align-items: center;
+
+    padding: 0 10px;
+    width: 90%;
+    max-width: 1280px;
+    margin: auto;
+
+  .logo {
+    color: white;
+    @include font(22px, normal, bold);
+  }
+  .search-bar {}
+  .cart {}
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+}
